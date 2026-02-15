@@ -8,7 +8,7 @@ const Stack = () => {
     return (
         <section className='py-8 border-b border-zinc-800'>
 
-            <h2 className='pl-5 py-1.5 font-semibold text-2xl border-b border-t border-zinc-800'>Stack</h2>
+            <h2 className='pl-5 py-1.5 font-semibold text-xl border-b border-t border-zinc-800'>Stack</h2>
 
             <div className='px-5 my-3 flex flex-wrap gap-2'>
 
