@@ -8,7 +8,7 @@ import Contact from './Comps/Contact'
 
 const App = () => {
   return (
-    <div className='bg-black text-white font-sans '>
+    <div className='bg-[#12100e] text-white font-sans '>
 
       <main className='relative min-h-screen max-w-3xl mx-auto py-8 border border-zinc-800 overflow-hidden '>
         <Nav />
