@@ -3,7 +3,7 @@ import { LuPin } from "react-icons/lu";
 import { FaGithub } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
 import Button from './Button';
 
 
@@ -13,7 +13,7 @@ const Intro = () => {
 
             <div className='flex mt-2'>
                 <div className='pl-5 pr-5'>
-                    <img src="/src/assets/profile.jpg" alt="Profile-img" className='w-21 h-20 rounded-full object-cover border border-zinc-700' />
+                    <img src="/public/profile.jpg" alt="Profile-img" className='w-21 h-20 rounded-full object-cover border border-zinc-700' />
                 </div>
 
                 <div>
@@ -28,7 +28,7 @@ const Intro = () => {
                         <Button Icon={FaGithub} />
                         <Button Icon={BsTwitterX}/>
                         <Button Icon={FaLinkedin}/>
-                        <Button Icon={FaInstagram}/>
+                        <Button Icon={FaDiscord}/>
 
                     </div>
                 </div>
