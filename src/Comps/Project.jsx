@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
+import project1 from './public/p1.png'
 
 const Project = () => {
     return (
@@ -10,7 +11,7 @@ const Project = () => {
 
             <div className='grid grid-cols-2 gap-3 p-2'>
                 <ProjectCard
-                    imageSrc="/public/p1.png"
+                    imageSrc={project1}
                     projectName="Color Palette Generator"
                     projectDescrip="A responsive web app that generates harmonious color palettes instantly. Built using HTML, CSS, and JavaScript, featuring dynamic color generation, one-click clipboard copying, and clean UI interactions for designers and developers."
                 />
