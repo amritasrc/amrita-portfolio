@@ -3,6 +3,8 @@ import Intro from './Comps/Intro'
 import Nav from './Comps/Nav'
 import Stack from './Comps/Stack'
 import About from './Comps/About'
+import Project from './Comps/Project'
+import Contact from './Comps/Contact'
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
         <Intro />
         <Stack/>
         <About/>
+        <Project/>
+        <Contact/>
       </main>
 
     </div>
