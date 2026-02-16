@@ -13,7 +13,7 @@ const Intro = () => {
 
             <div className='flex mt-2'>
                 <div className='pl-5 pr-5'>
-                    <img src="/public/profile.jpg" alt="Profile-img" className='w-21 h-20 rounded-full object-cover border border-zinc-700' />
+                    <img src="/profile.jpg" alt="Profile-img" className='w-21 h-20 rounded-full object-cover border border-zinc-700' />
                 </div>
 
                 <div>
