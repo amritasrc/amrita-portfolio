@@ -1,9 +1,9 @@
 import React from 'react'
 import { MdArrowOutward } from "react-icons/md";
 
-const ProjectCard = ({ imageSrc, projectName, projectDescrip }) => {
+const ProjectCard = ({ imageSrc, projectName, link, projectDescrip }) => {
     return (
-        <div className="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden">
+        <div className="bg-[#12100e] border border-zinc-800 rounded-2xl overflow-hidden">
 
             {/* Image header */}
             <div className="h-48 w-full overflow-hidden">
@@ -19,9 +19,15 @@ const ProjectCard = ({ imageSrc, projectName, projectDescrip }) => {
                 <h3 className="flex justify-between items-center font-semibold">
                     {projectName}
 
-                    <span className="px-4 py-1 text-xs bg-zinc-800/70 hover:bg-zinc-800 rounded-2xl cursor-pointer transition-colors duration-200 ease-in-out flex items-center gap-0.5">
+                    <a
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-1 text-xs bg-[#1f1b17] hover:bg-zinc-800 rounded-2xl cursor-pointer transition-colors duration-200 ease-in-out flex items-center gap-0.5"
+                    >
                         Live <MdArrowOutward />
-                    </span>
+                    </a>
+
                 </h3>
 
                 <p className="text-sm text-zinc-400 mt-2 leading-relaxed">

@@ -8,16 +8,18 @@ const Project = () => {
                 Projects
             </h2>
 
-            <div className='grid grid-cols-2 gap-3 p-2'>
+            <div className="grid grid-cols-1 gap-3 p-2 sm:grid-cols-2">
                 <ProjectCard
                     imageSrc="/p1.png"
                     projectName="Color Palette Generator"
+                    link="https://color-palette-generator-gamma-two.vercel.app/"
                     projectDescrip="A responsive web app that generates harmonious color palettes instantly. Built using HTML, CSS, and JavaScript, featuring dynamic color generation, one-click clipboard copying, and clean UI interactions for designers and developers."
                 />
 
                 <ProjectCard
                     imageSrc="/p2.png"
                     projectName="Gradient Generator"
+                    link="https://background-gradient-generator-inky.vercel.app/"
                     projectDescrip="A sleek gradient generator web app that instantly creates visually balanced color transitions. Users can generate random gradients, preview them in real time, and copy ready-to-use CSS code with a single click."
                 />
             </div>
