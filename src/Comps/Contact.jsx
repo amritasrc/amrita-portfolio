@@ -16,8 +16,8 @@ const Contact = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2">
                 <ContactCard Icon={BiLogoGmail} contact="Email" info="dev.amritasrc@gmail.com" />
                 <ContactCard Icon={FaGithub} contact="GitHub" info="@amritasrc" />
-                <ContactCard Icon={BsTwitterX} contact="X (Twitter)" info="@_Amrita_13" />
-                <ContactCard Icon={FaDiscord} contact="Discord" info="@xmrita13" />
+                <ContactCard Icon={BsTwitterX} contact="X (Twitter)" info="@amritasrc" />
+                <ContactCard Icon={FaDiscord} contact="Discord" info="@amritasrc" />
             </div>
 
         </section>
