@@ -13,12 +13,16 @@ const Contact = () => {
                 Contact
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2">
+            <div>
+                <ContactCard Icon={BiLogoGmail} contact="Email" info="dev.amritasrc@gmail.com" />
+            </div>
+
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2">
                 <ContactCard Icon={BiLogoGmail} contact="Email" info="dev.amritasrc@gmail.com" />
                 <ContactCard Icon={FaGithub} contact="GitHub" info="@amritasrc" />
                 <ContactCard Icon={BsTwitterX} contact="X (Twitter)" info="@amritasrc" />
                 <ContactCard Icon={FaDiscord} contact="Discord" info="@amritasrc" />
-            </div>
+            </div> */}
 
         </section>
     )
