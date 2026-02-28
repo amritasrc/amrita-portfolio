@@ -10,7 +10,7 @@ const ContactCard = ({ Icon, contact, info }) => {
             </div>
 
             <div className="flex flex-col leading-tight">
-                <span className='text-zinc-300'>Feel free to mail me at: <a className='font-medium underline' href="mailto:dev.amritasrc@gmail.com?" target='_blank'>{info}</a></span>
+                <span className='text-zinc-400'>Feel free to mail me at: <a className='font-medium underline text-zinc-300' href="mailto:dev.amritasrc@gmail.com?" target='_blank'>{info}</a></span>
                 {/* <span className="text-xs text-zinc-400">{info}</span> */}
             </div>
 

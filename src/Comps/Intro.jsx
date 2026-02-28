@@ -28,8 +28,8 @@ const Intro = () => {
                         Building clean, responsive web interfaces.
                     </p>
 
-                    <p className="flex items-center gap-2 text-zinc-400 mt-3">
-                        <LuPin className="mt-1" />
+                    <p className="flex items-center text-center gap-0.5 text-zinc-400 mt-3">
+                        <LuPin className="mt-1 text-red-600" />
                         <span>Ranchi, Jharkhand</span>
                     </p>
 

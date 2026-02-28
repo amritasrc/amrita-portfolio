@@ -25,7 +25,7 @@ const ProjectCard = ({ imageSrc, projectName, link, projectDescrip }) => {
                         rel="noopener noreferrer"
                         className="px-4 py-1 text-xs bg-[#1f1b17] hover:bg-zinc-800 rounded-2xl cursor-pointer transition-colors duration-200 ease-in-out flex items-center gap-0.5"
                     >
-                        Live <MdArrowOutward />
+                        Live <MdArrowOutward className='text-green-500'/>
                     </a>
 
                 </h3>

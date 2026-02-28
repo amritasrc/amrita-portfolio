@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className='bg-[#12100e] text-white font-sans '>
 
-      <main className='relative min-h-screen max-w-3xl mx-auto pt-8 border border-zinc-800 overflow-hidden '>
+      <main className='relative min-h-screen max-w-3xl mx-auto pt-8 pb-3 border border-zinc-800 overflow-hidden '>
         {/* <Nav /> */}
         <Intro />
         <About/>
