@@ -22,6 +22,13 @@ const Project = () => {
                     link="https://background-gradient-generator-inky.vercel.app/"
                     projectDescrip="A sleek gradient generator web app that instantly creates visually balanced color transitions. Users can generate random gradients, preview them in real time, and copy ready-to-use CSS code with a single click."
                 />
+
+                <ProjectCard
+                    imageSrc="./p3.png"
+                    projectName="AniVerse"
+                    link="https://ani-verse-lake.vercel.app/"
+                    projectDescrip="AniVerse is a web-based anime database built with HTML, CSS, and JavaScript, allowing users to search and explore anime titles easily through a clean and interactive interface."
+                />
             </div>
         </section>
 
