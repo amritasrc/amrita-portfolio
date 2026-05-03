@@ -10,24 +10,24 @@ const Project = () => {
 
             <div className="grid grid-cols-1 gap-3 p-2 sm:grid-cols-2">
                 <ProjectCard
-                    imageSrc="/p1.png"
-                    projectName="Color Palette Generator"
-                    link="https://color-palette-generator-gamma-two.vercel.app/"
-                    projectDescrip="A responsive web app that generates harmonious color palettes instantly. Built using HTML, CSS, and JavaScript, featuring dynamic color generation, one-click clipboard copying, and clean UI interactions for designers and developers."
+                    imageSrc="/yt-studymode.png"
+                    projectName="YouTube StudyMode Extension"
+                    link="https://github.com/amritasrc/YT-StudyMode-Extension"
+                    projectDescrip="A browser extension that removes distractions from YouTube by hiding recommendations and comments, helping users stay focused on study content."
                 />
 
                 <ProjectCard
-                    imageSrc="/p2.png"
-                    projectName="Gradient Generator"
-                    link="https://background-gradient-generator-inky.vercel.app/"
-                    projectDescrip="A sleek gradient generator web app that instantly creates visually balanced color transitions. Users can generate random gradients, preview them in real time, and copy ready-to-use CSS code with a single click."
-                />
-
-                <ProjectCard
-                    imageSrc="./p3.png"
-                    projectName="AniVerse"
+                    imageSrc="./aniverse.png"
+                    projectName="Aniverse"
                     link="https://ani-verse-lake.vercel.app/"
-                    projectDescrip="AniVerse is a web-based anime database built with HTML, CSS, and JavaScript, allowing users to search and explore anime titles easily through a clean and interactive interface."
+                    projectDescrip="A web app built using an anime API that lets users explore, search, and discover anime with details like ratings, genres, and summaries in a clean, interactive interface."
+                />
+
+                <ProjectCard
+                    imageSrc="/background-gradient.png"
+                    projectName="Background Gradient Generator"
+                    link="https://background-gradient-generator-inky.vercel.app/"
+                    projectDescrip="A web tool that lets users create and customize CSS gradients in real time. It supports multiple gradient types, live preview, and instant CSS code copy, making UI design faster and more efficient."
                 />
             </div>
         </section>
