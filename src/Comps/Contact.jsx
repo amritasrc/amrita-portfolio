@@ -13,7 +13,7 @@ const Contact = () => {
                 Contact
             </h2>
 
-            <div>
+            <div className='pb-4'>
                 <ContactCard Icon={BiLogoGmail} contact="Email" info="dev.amritasrc@gmail.com" />
             </div>
 
