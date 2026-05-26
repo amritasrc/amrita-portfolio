@@ -9,6 +9,14 @@ const Project = () => {
             </h2>
 
             <div className="grid grid-cols-1 gap-3 p-2 sm:grid-cols-2">
+
+                <ProjectCard
+                imageSrc="/expense-tracker.png"
+                projectName="Expense Tracker"
+                link="https://expense-tracker-orcin-tau-32.vercel.app/"
+                projectDescrip="A web app for tracking daily expenses, allowing users to add, categorize, and manage spending with real-time total calculation and a simple user-friendly interface."
+                />
+
                 <ProjectCard
                     imageSrc="/yt-studymode.png"
                     projectName="YouTube StudyMode Extension"
