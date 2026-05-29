@@ -3,7 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const ProjectCard = ({ imageSrc, projectName, link, projectDescrip }) => {
     return (
-        <div className="bg-[#12100e] border border-zinc-800 rounded-2xl overflow-hidden">
+        <div className="bg-white dark:bg-[#12100e] border border-zinc-300 dark:border-zinc-800 rounded-2xl overflow-hidden">
 
             {/* Image header */}
             <div className="h-48 w-full overflow-hidden">
@@ -23,14 +23,14 @@ const ProjectCard = ({ imageSrc, projectName, link, projectDescrip }) => {
                         href={link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-4 py-1 text-xs bg-[#1f1b17] hover:bg-zinc-800 rounded-2xl cursor-pointer transition-colors duration-200 ease-in-out flex items-center gap-0.5"
+                        className="px-4 py-1 text-xs bg-zinc-200 dark:bg-[#1f1b17] hover:bg-zinc-300 dark:hover:bg-zinc-800 rounded-2xl cursor-pointer transition-colors duration-200 ease-in-out flex items-center gap-0.5"
                     >
                         Live <MdArrowOutward className='text-green-500'/>
                     </a>
 
                 </h3>
 
-                <p className="text-sm text-zinc-400 mt-2 leading-relaxed">
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 leading-relaxed">
                     {projectDescrip}
                 </p>
             </div>

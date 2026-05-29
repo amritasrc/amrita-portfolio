@@ -9,26 +9,29 @@ import Button from './Button';
 
 const Intro = () => {
     return (
-        <section className="py-8 border-b border-zinc-800">
+        <section className="py-8 border-b border-zinc-300 dark:border-zinc-800">
             <div className="flex mt-2 items-start">
 
                 <div className="px-4 shrink-0">
                     <img
                         src="/profile.jpg"
                         alt="Profile-img"
-                        className="w-20 h-20 rounded-full object-cover border border-zinc-700"
+                        className="w-20 h-20 rounded-full object-cover border border-zinc-300 dark:border-zinc-700"
                     />
                 </div>
 
                 <div className="pr-4">
                     <h2 className="text-2xl font-semibold">Hello, I'm Amrita!</h2>
-                    <h2 className="text-zinc-400">Frontend Web Developer</h2>
 
-                    <p className="text-zinc-200 text-base sm:text-xl mt-2 leading-tight">
+                    <h2 className="text-zinc-600 dark:text-zinc-400">
+                        Frontend Web Developer
+                    </h2>
+
+                    <p className="text-zinc-700 dark:text-zinc-200 text-base sm:text-xl mt-2 leading-tight">
                         Building clean, responsive web interfaces.
                     </p>
 
-                    <p className="flex items-center text-center gap-0.5 text-zinc-400 mt-3">
+                    <p className="flex items-center text-center gap-0.5 text-zinc-500 dark:text-zinc-400 mt-3">
                         <LuPin className="mt-1 text-red-600" />
                         <span>Ranchi, Jharkhand</span>
                     </p>

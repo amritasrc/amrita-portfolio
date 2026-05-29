@@ -7,9 +7,9 @@ import { FaDiscord } from "react-icons/fa";
 
 const Contact = () => {
     return (
-        <section className=" border-b border-zinc-800">
+        <section className="border-b border-zinc-300 dark:border-zinc-800">
 
-            <h2 className="pl-5 py-1.5 font-semibold text-xl border-y border-zinc-800">
+            <h2 className="pl-5 py-1.5 font-semibold text-xl border-y border-zinc-300 dark:border-zinc-800">
                 Contact
             </h2>
 

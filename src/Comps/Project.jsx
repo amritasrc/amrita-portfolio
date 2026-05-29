@@ -3,8 +3,8 @@ import ProjectCard from './ProjectCard'
 
 const Project = () => {
     return (
-        <section className='py-8 border-b border-zinc-800'>
-            <h2 className='pl-5 py-1.5 font-semibold text-xl border-b border-t border-zinc-800 mb-3'>
+        <section className='py-8 border-b border-zinc-300 dark:border-zinc-800'>
+            <h2 className='pl-5 py-1.5 font-semibold text-xl border-b border-t border-zinc-300 dark:border-zinc-800 mb-3'>
                 Projects
             </h2>
 
