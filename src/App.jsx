@@ -1,10 +1,10 @@
 import React from 'react'
-import Intro from './Comps/Intro'
-import Nav from './Comps/Nav'
-import Stack from './Comps/Stack'
-import About from './Comps/About'
-import Project from './Comps/Project'
-import Contact from './Comps/Contact'
+import Intro from './comps/Intro'
+import Nav from './comps/Nav'
+import Stack from './comps/Stack'
+import About from './comps/About'
+import Project from './comps/Project'
+import Contact from './comps/Contact'
 
 const App = () => {
   return (
