@@ -1,8 +1,14 @@
 import React from 'react'
-import { IoLogoJavascript } from "react-icons/io5";
+import { SiJavascript } from "react-icons/si";
 import { FaReact } from "react-icons/fa6";
 import { SiTailwindcss } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa6";
+import { FaGitAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaJava } from "react-icons/fa";
+import { TbBrandFramerMotion } from "react-icons/tb"
 import Tech from './Tech';
 
 const Stack = () => {
@@ -15,11 +21,16 @@ const Stack = () => {
 
             <div className='px-5 my-3 flex flex-wrap gap-2'>
 
-                <Tech Icon={IoLogoJavascript} name="JavaScript" color="text-yellow-300" />
+                <Tech Icon={SiJavascript} name="JavaScript" color="text-yellow-300" />
                 <Tech Icon={FaReact} name="React" color="text-[#61DAFB]" />
                 <Tech Icon={SiTailwindcss} name="Tailwind CSS" color="text-[#38B2AC]" />
                 <Tech Icon={FaNodeJs} name="NodeJS" color="text-[#43853D]" />
-
+                <Tech Icon={FaHtml5} name="HTML" color="text-[#E44D26]" />
+                <Tech Icon={FaCss3Alt} name="CSS" color="text-[#2965f1]"/>
+                <Tech Icon={FaGitAlt} name="Git" color="text-[#F1502F]"/>
+                <Tech Icon={FaGithub} name="GitHub" color="text-[#000000] dark:text-[#ffffff]"/>
+                <Tech Icon={FaJava} name="Java" color="text-[#ED8B00]"/>
+                <Tech Icon={TbBrandFramerMotion} name="Framer Motion" color="text-[#0055FF]"/>
             </div>
 
         </section>
