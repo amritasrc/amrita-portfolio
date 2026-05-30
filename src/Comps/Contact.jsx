@@ -7,13 +7,13 @@ import { FaDiscord } from "react-icons/fa";
 
 const Contact = () => {
     return (
-        <section className="border-b border-zinc-300 dark:border-zinc-800">
+        <section className="py-8 border-b border-zinc-300 dark:border-zinc-800 mb-3">
 
             <h2 className="pl-5 py-1.5 font-semibold text-xl border-y border-zinc-300 dark:border-zinc-800">
                 Contact
             </h2>
 
-            <div className='pb-4'>
+            <div className='pt-4'>
                 <ContactCard Icon={BiLogoGmail} contact="Email" info=" dev.amritasrc@gmail.com" />
             </div>
 

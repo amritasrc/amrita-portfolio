@@ -3,7 +3,7 @@ import Button from './Button'
 
 const ContactCard = ({ Icon, contact, info }) => {
     return (
-        <div className="flex items-center gap-4 p-4 border border-zinc-300 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-[#181512] transition cursor-pointer group">
+        <div className="flex items-center gap-4 hover:bg-zinc-100 dark:hover:bg-[#181512] transition cursor-pointer group">
 
             <div className="w-10 h-10 flex items-center justify-center rounded-lg border border-zinc-300 dark:border-zinc-800 text-zinc-600 dark:text-zinc-300 group-hover:text-black dark:group-hover:text-white">
                 <Icon size={18} />
