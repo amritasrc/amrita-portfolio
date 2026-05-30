@@ -6,6 +6,7 @@ import { FaNodeJs } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa6";
 import { FaGitAlt } from "react-icons/fa";
+import { TbBrandCpp } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { TbBrandFramerMotion } from "react-icons/tb"
@@ -27,12 +28,13 @@ const Stack = () => {
                 <Tech Icon={SiTailwindcss} name="Tailwind CSS" color="dark:text-[#38B2AC]" />
                 <Tech Icon={FaNodeJs} name="NodeJS" color="dark:text-[#43853D]" />
                 <Tech Icon={FaHtml5} name="HTML" color="dark:text-[#E44D26]" />
-                <Tech Icon={FaCss3Alt} name="CSS" color="dark:text-[#2965f1]"/>
-                <Tech Icon={FaGitAlt} name="Git" color="dark:text-[#F1502F]"/>
-                <Tech Icon={FaGithub} name="GitHub" color="dark:text-[#000000] dark:text-[#ffffff]"/>
-                <Tech Icon={FaJava} name="Java" color="dark:text-[#ED8B00]"/>
-                <Tech Icon={TbBrandFramerMotion} name="Framer Motion" color="dark:text-[#0055FF]"/>
-                <Tech Icon={FiFigma} name="Figma" color="dark:text-[#a259ff]"/>
+                <Tech Icon={FaCss3Alt} name="CSS" color="dark:text-[#2965f1]" />
+                <Tech Icon={FaGitAlt} name="Git" color="dark:text-[#F1502F]" />
+                <Tech Icon={FaGithub} name="GitHub" color="dark:text-[#000000] dark:text-[#ffffff]" />
+                <Tech Icon={FaJava} name="Java" color="dark:text-[#ED8B00]" />
+                <Tech Icon={TbBrandCpp} name="C/C++" color="dark:text-[#659AD2]"/>
+                <Tech Icon={TbBrandFramerMotion} name="Framer Motion" color="dark:text-[#0055FF]" />
+                <Tech Icon={FiFigma} name="Figma" color="dark:text-[#a259ff]" />
             </div>
 
         </section>
