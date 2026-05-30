@@ -14,7 +14,7 @@ const Contact = () => {
             </h2>
 
             <div className='pb-4'>
-                <ContactCard Icon={BiLogoGmail} contact="Email" info="dev.amritasrc@gmail.com" />
+                <ContactCard Icon={BiLogoGmail} contact="Email" info=" dev.amritasrc@gmail.com" />
             </div>
 
             {/* <div className="grid grid-cols-1 sm:grid-cols-2">

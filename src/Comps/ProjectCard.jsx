@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import { MdArrowOutward } from "react-icons/md";
+import { FaArrowTrendUp } from "react-icons/fa6";
 
 const ProjectCard = ({ imageSrc, projectName, link, projectDescrip, githubLink }) => {
     return (
@@ -35,9 +35,9 @@ const ProjectCard = ({ imageSrc, projectName, link, projectDescrip, githubLink }
                         href={link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-4 py-1 text-xs bg-zinc-200 dark:bg-[#1f1b17] hover:bg-zinc-300 dark:hover:bg-zinc-800 rounded-2xl cursor-pointer transition-colors duration-200 ease-in-out flex items-center gap-0.5"
+                        className="px-4 py-1 text-xs bg-zinc-200 dark:bg-[#1f1b17] hover:bg-zinc-300 dark:hover:bg-zinc-800 rounded-2xl cursor-pointer transition-colors duration-200 ease-in-out flex items-center gap-1"
                     >
-                        Live <MdArrowOutward className='text-green-500' />
+                        Live <FaArrowTrendUp className='text-green-500 text-lg'/>
                     </a>
 
                 </h3>

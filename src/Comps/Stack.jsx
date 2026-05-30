@@ -21,16 +21,16 @@ const Stack = () => {
 
             <div className='px-5 my-3 flex flex-wrap gap-2'>
 
-                <Tech Icon={SiJavascript} name="JavaScript" color="text-yellow-300" />
-                <Tech Icon={FaReact} name="React" color="text-[#61DAFB]" />
-                <Tech Icon={SiTailwindcss} name="Tailwind CSS" color="text-[#38B2AC]" />
-                <Tech Icon={FaNodeJs} name="NodeJS" color="text-[#43853D]" />
-                <Tech Icon={FaHtml5} name="HTML" color="text-[#E44D26]" />
-                <Tech Icon={FaCss3Alt} name="CSS" color="text-[#2965f1]"/>
-                <Tech Icon={FaGitAlt} name="Git" color="text-[#F1502F]"/>
-                <Tech Icon={FaGithub} name="GitHub" color="text-[#000000] dark:text-[#ffffff]"/>
-                <Tech Icon={FaJava} name="Java" color="text-[#ED8B00]"/>
-                <Tech Icon={TbBrandFramerMotion} name="Framer Motion" color="text-[#0055FF]"/>
+                <Tech Icon={SiJavascript} name="JavaScript" color="dark:text-yellow-300" />
+                <Tech Icon={FaReact} name="React" color="dark:text-[#61DAFB]" />
+                <Tech Icon={SiTailwindcss} name="Tailwind CSS" color="dark:text-[#38B2AC]" />
+                <Tech Icon={FaNodeJs} name="NodeJS" color="dark:text-[#43853D]" />
+                <Tech Icon={FaHtml5} name="HTML" color="dark:text-[#E44D26]" />
+                <Tech Icon={FaCss3Alt} name="CSS" color="dark:text-[#2965f1]"/>
+                <Tech Icon={FaGitAlt} name="Git" color="dark:text-[#F1502F]"/>
+                <Tech Icon={FaGithub} name="GitHub" color="dark:text-[#000000] dark:text-[#ffffff]"/>
+                <Tech Icon={FaJava} name="Java" color="dark:text-[#ED8B00]"/>
+                <Tech Icon={TbBrandFramerMotion} name="Framer Motion" color="dark:text-[#0055FF]"/>
             </div>
 
         </section>
