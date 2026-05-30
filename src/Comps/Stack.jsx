@@ -9,6 +9,7 @@ import { FaGitAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { TbBrandFramerMotion } from "react-icons/tb"
+import { FiFigma } from "react-icons/fi";
 import Tech from './Tech';
 
 const Stack = () => {
@@ -16,7 +17,7 @@ const Stack = () => {
         <section className='py-8 border-b border-zinc-300 dark:border-zinc-800'>
 
             <h2 className='pl-5 py-1.5 font-semibold text-xl border-b border-t border-zinc-300 dark:border-zinc-800'>
-                Stack
+                Skills
             </h2>
 
             <div className='px-5 my-3 flex flex-wrap gap-2'>
@@ -31,6 +32,7 @@ const Stack = () => {
                 <Tech Icon={FaGithub} name="GitHub" color="dark:text-[#000000] dark:text-[#ffffff]"/>
                 <Tech Icon={FaJava} name="Java" color="dark:text-[#ED8B00]"/>
                 <Tech Icon={TbBrandFramerMotion} name="Framer Motion" color="dark:text-[#0055FF]"/>
+                <Tech Icon={FiFigma} name="Figma" color="dark:text-[#a259ff]"/>
             </div>
 
         </section>
