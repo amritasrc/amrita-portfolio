@@ -5,6 +5,7 @@ import Stack from './Comps/Stack'
 import About from './Comps/About'
 import Project from './Comps/Project'
 import Contact from './Comps/Contact'
+import GithubCalender from './Comps/GithubCalender'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Intro />
         <About />
         <Stack/>
+        <GithubCalender/>
         <Project />
         <Contact />
       </main>
