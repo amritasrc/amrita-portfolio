@@ -2,7 +2,9 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-html {
+html, body {
+  height: 100%;
+  background: #12100e;
   transition: background-color 0.3s ease;
 }
 
