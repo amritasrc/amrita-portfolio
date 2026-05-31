@@ -6,20 +6,26 @@ import About from './Comps/About'
 import Project from './Comps/Project'
 import Contact from './Comps/Contact'
 import GithubCalender from './Comps/GithubCalender'
+import { motion } from 'framer-motion'
 
 const App = () => {
   return (
     <div className=' bg-zinc-100 text-zinc-900 dark:bg-[#12100e] dark:text-zinc-100 min-h-screen transition-colors duration-300'>
 
-      <main className='relative min-h-screen max-w-3xl mx-auto pt-8 px-6 border border-zinc-300 dark:border-zinc-800 overflow-hidden'>
+      <motion.main
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        viewport={{ once: true }}
+        className='relative min-h-screen max-w-3xl mx-auto pt-8 px-6 border border-zinc-300 dark:border-zinc-800 overflow-hidden'>
         <Nav />
         <Intro />
         <About />
-        <Stack/>
-        <GithubCalender/>
+        <Stack />
+        <GithubCalender />
         <Project />
         <Contact />
-      </main>
+      </motion.main>
 
     </div>
   )

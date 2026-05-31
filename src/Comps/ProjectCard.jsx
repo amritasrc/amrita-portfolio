@@ -11,7 +11,11 @@ const ProjectCard = ({ imageSrc, projectName, link, projectDescrip, githubLink }
                 type: "spring",
                 stiffness: 300,
                 damping: 20,
+                duration: 2, 
             }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             className="bg-white dark:bg-[#12100e] border border-zinc-300 dark:border-zinc-800 rounded-2xl overflow-hidden">
 
             {/* Image header */}
@@ -37,7 +41,7 @@ const ProjectCard = ({ imageSrc, projectName, link, projectDescrip, githubLink }
                         rel="noopener noreferrer"
                         className="px-4 py-1 text-xs bg-zinc-200 dark:bg-[#1f1b17] hover:bg-zinc-300 dark:hover:bg-zinc-800 rounded-2xl cursor-pointer transition-colors duration-200 ease-in-out flex items-center gap-1"
                     >
-                        Live <FaArrowTrendUp className='text-green-500 text-lg'/>
+                        Live <FaArrowTrendUp className='text-green-500 text-lg' />
                     </a>
 
                 </h3>
