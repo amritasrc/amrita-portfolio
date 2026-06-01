@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion';
+import { easeOut, motion } from 'framer-motion';
 import { FaArrowTrendUp } from "react-icons/fa6";
 
 const ProjectCard = ({ imageSrc, projectName, link, projectDescrip, githubLink }) => {
@@ -7,15 +7,18 @@ const ProjectCard = ({ imageSrc, projectName, link, projectDescrip, githubLink }
         <motion.div
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.95 }}
-            transition={{
-                type: "spring",
-                stiffness: 300,
-                damping: 20,
-                duration: 2, 
-            }}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{
+                opacity: { duration: 0.6, ease: "easeOut" },
+                y: { duration: 0.6, ease: "easeOut" },
+                scale: {
+                    type: "spring",
+                    stiffness: 300,
+                    damping: 20,
+                },
+            }}
             className="bg-white dark:bg-[#12100e] border border-zinc-300 dark:border-zinc-800 rounded-2xl overflow-hidden">
 
             {/* Image header */}
