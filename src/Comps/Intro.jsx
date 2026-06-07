@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
+import { Link } from "react-router";
 import Button from './Button';
 
 
@@ -28,7 +29,7 @@ const Intro = () => {
                     </h2>
 
                     <p className="text-zinc-700 dark:text-zinc-200 text-base sm:text-xl mt-2 leading-tight">
-                       Building responsive web applications with React and modern JavaScript.
+                        Building responsive web applications with React and modern JavaScript.
                     </p>
 
                     <p className="flex items-center text-center gap-0.5 text-zinc-500 dark:text-zinc-400 mt-3">
@@ -40,10 +41,16 @@ const Intro = () => {
                         <Button Icon={FaGithub} link="https://github.com/amritasrc" />
                         <Button Icon={BsTwitterX} link="https://x.com/amritasrc" />
                         <Button Icon={FaLinkedin} link="https://www.linkedin.com/in/amrita-kumari-dev/" />
-                        <Button Icon={FaDiscord} link="https://discord.com/users/1354067160862949471"/>
+                        <Button Icon={FaDiscord} link="https://discord.com/users/1354067160862949471" />
                     </div>
-                </div>
 
+                    {/* <a href='/amrita-resume.pdf' download className='flex gap-1 w-fit items-center mt-4 border border-zinc-300 dark:border-zinc-800 px-4 py-2 bg-zinc-200 dark:bg-[#1f1b17] hover:bg-zinc-300 dark:hover:bg-zinc-800 rounded-xl cursor-pointer transition-all duration-200 ease-in-out'><MdOutlineFileDownload />Resume</a> */}
+                    <Link to="/resume"><button className='flex gap-1 w-fit items-center mt-4 border border-zinc-300 dark:border-zinc-800 px-4 py-2 bg-zinc-200 dark:bg-[#1f1b17] hover:bg-zinc-300 dark:hover:bg-zinc-800 rounded-xl cursor-pointer transition-all duration-200 ease-in-out'
+                    >
+                        Resume
+                    </button></Link>
+
+                </div>
             </div>
         </section>
 

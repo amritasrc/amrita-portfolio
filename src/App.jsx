@@ -26,7 +26,6 @@ const App = () => {
         <Project />
         <Contact />
       </motion.main>
-
     </div>
   )
 }
