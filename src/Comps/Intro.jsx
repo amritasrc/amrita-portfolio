@@ -28,7 +28,7 @@ const Intro = () => {
                     </h2>
 
                     <p className="text-zinc-700 dark:text-zinc-200 text-base sm:text-xl mt-2 leading-tight">
-                        Building clean, responsive web interfaces.
+                       Building responsive web applications with React and modern JavaScript.
                     </p>
 
                     <p className="flex items-center text-center gap-0.5 text-zinc-500 dark:text-zinc-400 mt-3">
