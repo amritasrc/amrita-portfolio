@@ -11,11 +11,19 @@ const Project = () => {
             <div className="grid grid-cols-1 gap-4 p-2 sm:grid-cols-2">
 
                 <ProjectCard
-                imageSrc="/expense-tracker.png"
-                githubLink="https://github.com/amritasrc/Expense-Tracker"
-                projectName="Expense Tracker"
-                link="https://expense-tracker-orcin-tau-32.vercel.app/"
-                projectDescrip="A web app for tracking daily expenses, allowing users to add, categorize, and manage spending with real-time total calculation and a simple user-friendly interface."
+                    imageSrc="/rhythmify.png"
+                    githubLink="https://github.com/amritasrc/Rhythmify"
+                    projectName="Rhythmify"
+                    link="https://rhythmify-jade.vercel.app/"
+                    projectDescrip="A modern music player built with React, TypeScript, Tailwind CSS, and the YouTube Data API. Search songs, play music instantly, control playback with keyboard shortcuts, and enjoy a clean Spotify-inspired experience."
+                />
+
+                <ProjectCard
+                    imageSrc="/expense-tracker.png"
+                    githubLink="https://github.com/amritasrc/Expense-Tracker"
+                    projectName="Expense Tracker"
+                    link="https://expense-tracker-orcin-tau-32.vercel.app/"
+                    projectDescrip="A web app for tracking daily expenses, allowing users to add, categorize, and manage spending with real-time total calculation and a simple user-friendly interface."
                 />
 
                 <ProjectCard

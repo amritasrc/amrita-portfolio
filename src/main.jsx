@@ -5,6 +5,7 @@ import App from './App.jsx'
 import './index.css'
 import { ThemeProvider } from "./context/ThemeContext.jsx"
 import ResumePage from './Comps/ResumePage.jsx';
+import NotFound from './Comps/NotFound.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')).render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="resume" element={<ResumePage />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>,
     </ThemeProvider>
