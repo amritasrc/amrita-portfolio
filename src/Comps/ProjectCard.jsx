@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaArrowTrendUp } from "react-icons/fa6";
+import { IoIosClose } from "react-icons/io";
 
-const ProjectCard = ({
-    imageSrc,
-    projectName,
-    link,
-    projectDescrip,
-    githubLink
-}) => {
+const ProjectCard = ({imageSrc, projectName, link, projectDescrip, githubLink}) => {
+
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
@@ -84,7 +80,6 @@ const ProjectCard = ({
                 </div>
             </motion.div>
 
-            {/* Fullscreen Image Modal */}
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
@@ -129,7 +124,7 @@ const ProjectCard = ({
                             exit={{ opacity: 0 }}
                             whileTap={{ scale: 0.9 }}
                         >
-                            ×
+                            <IoIosClose/>
                         </motion.button>
                     </motion.div>
                 )}
