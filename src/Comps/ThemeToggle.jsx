@@ -22,7 +22,7 @@ const ThemeToggle = () => {
                     transition={{ duration: 0.5, ease: 'easeInOut' }}
                     className="text-neutral-700 dark:text-neutral-300 flex items-center justify-center"
                 >
-                    {theme === 'light' ? <IoMoon size={18} /> : <WiDaySunny size={18} />}
+                    {theme === 'light' ? <IoMoon size={20} /> : <WiDaySunny size={22} />}
                 </motion.div>
             </AnimatePresence>
         </button>
