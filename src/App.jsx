@@ -1,6 +1,6 @@
 import React from 'react'
 import Intro from './Comps/Intro'
-import ThemeToggle from './comps/ThemeToggle';
+import ThemeToggle from './Comps/ThemeToggle';
 import Nav from './Comps/Nav'
 import Stack from './Comps/Stack'
 import About from './Comps/About'
