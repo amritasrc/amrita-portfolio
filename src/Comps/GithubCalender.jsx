@@ -3,7 +3,7 @@ import { GitHubCalendar } from "react-github-calendar";
 import { useTheme } from "../context/ThemeContext";
 
 const GithubCalender = () => {
-  const { resolvedTheme } = useTheme();
+ const { theme } = useTheme();
   return (
     <section className="py-8 border-b border-zinc-300 dark:border-zinc-800">
       <h2 className="pl-5 py-1.5 font-semibold text-xl border-b border-t border-zinc-300 dark:border-zinc-800">
@@ -12,7 +12,7 @@ const GithubCalender = () => {
       <div>
         <GitHubCalendar
           username="amritasrc"
-          colorScheme={resolvedTheme}
+          colorScheme={theme}
           fontSize={13}
           blockSize={12}
           blockMargin={4}
