@@ -3,7 +3,7 @@ import { GitHubCalendar } from "react-github-calendar";
 import { useTheme } from "../context/ThemeContext";
 
 const GithubCalender = () => {
- const { theme } = useTheme();
+  const { theme } = useTheme();
   return (
     <section className="py-8 border-b border-zinc-300 dark:border-zinc-800">
       <h2 className="pl-5 py-1.5 font-semibold text-xl border-b border-t border-zinc-300 dark:border-zinc-800">
@@ -18,9 +18,9 @@ const GithubCalender = () => {
           blockMargin={4}
           showWeekdayLabels
           theme={{
-            light: ["#ffffff", "#b7efc5", "#4ade80", "#22c55e", "#166534"],
-            dark: ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
-          }}
+  light: ["#ffffff", "#bfdbfe", "#60a5fa", "#3b82f6", "#1d4ed8"],
+  dark: ["#0f172a", "#1e3a8a", "#2563eb", "#3b82f6", "#93c5fd"],
+}}
           labels={{
             totalCount: "{{count}} contributions in the last year",
           }}
