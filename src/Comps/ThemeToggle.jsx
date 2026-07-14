@@ -19,7 +19,7 @@ const ThemeToggle = () => {
                     initial={{ y: -15, opacity: 0, rotate: -45 }}
                     animate={{ y: 0, opacity: 1, rotate: 0 }}
                     exit={{ y: 15, opacity: 0, rotate: 45 }}
-                    transition={{ duration: 0.2, ease: 'easeInOut' }}
+                    transition={{ duration: 0.5, ease: 'easeInOut' }}
                     className="text-neutral-700 dark:text-neutral-300 flex items-center justify-center"
                 >
                     {theme === 'light' ? <IoMoon size={18} /> : <WiDaySunny size={18} />}
