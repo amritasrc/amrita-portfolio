@@ -59,7 +59,7 @@ export const PDFViewer = () => {
   const { engine, isLoading } = usePdfiumEngine();
 
   if (isLoading || !engine) {
-    return <div className="bg-black dark:bg-black">Loading PDF Engine...</div>;
+    return <div className="bg-white dark:bg-black">Loading PDF Engine...</div>;
   }
 
   // 3. Wrap your UI with the <EmbedPDF> provider
@@ -82,7 +82,7 @@ export const PDFViewer = () => {
                           <RenderLayer
                             documentId={activeDocumentId}
                             pageIndex={pageIndex}
-                            className="bg-zinc-950 border-2 rounded-2xl"
+                            className="bg-zinc-100 dark:bg-zinc-950 border-2 border-zinc-200 dark:border-zinc-800 rounded-2xl"
                           />
                         </div>
                       )}
