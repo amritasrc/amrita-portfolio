@@ -1,44 +1,78 @@
-import React from 'react'
-import { SiJavascript } from "react-icons/si";
-import { FaReact } from "react-icons/fa6";
-import { SiTailwindcss } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
+import React from "react";
+import { motion } from "framer-motion";
+import { SiJavascript, SiTailwindcss } from "react-icons/si";
+import { FaReact, FaNodeJs, FaHtml5, FaGitAlt, FaGithub, FaJava } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa6";
-import { FaGitAlt } from "react-icons/fa";
-import { TbBrandCpp } from "react-icons/tb";
-import { FaGithub } from "react-icons/fa";
-import { FaJava } from "react-icons/fa";
-import { TbBrandFramerMotion } from "react-icons/tb"
+import { TbBrandCpp, TbBrandFramerMotion } from "react-icons/tb";
 import { FiFigma } from "react-icons/fi";
-import Tech from './Tech';
+
+const technologies = [
+  { name: "JavaScript", Icon: SiJavascript, color: "text-yellow-500" },
+  { name: "React", Icon: FaReact, color: "text-sky-400" },
+  { name: "Tailwind CSS", Icon: SiTailwindcss, color: "text-cyan-500" },
+  { name: "Node.js", Icon: FaNodeJs, color: "text-green-600" },
+  { name: "HTML", Icon: FaHtml5, color: "text-orange-600" },
+  { name: "CSS", Icon: FaCss3Alt, color: "text-blue-600" },
+  { name: "Git", Icon: FaGitAlt, color: "text-orange-500" },
+  { name: "GitHub", Icon: FaGithub, color: "text-neutral-800 dark:text-white" },
+  { name: "Java", Icon: FaJava, color: "text-orange-500" },
+  { name: "C/C++", Icon: TbBrandCpp, color: "text-blue-500" },
+  { name: "Framer Motion", Icon: TbBrandFramerMotion, color: "text-blue-500" },
+  { name: "Figma", Icon: FiFigma, color: "text-purple-500" },
+];
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.04,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 8 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.4, ease: "easeOut" },
+  },
+};
 
 const Stack = () => {
-    return (
-        <section className='py-8 border-b border-zinc-300 dark:border-zinc-800'>
+  return (
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-100px" }}
+      variants={containerVariants}
+      className="py-16 text-center max-w-2xl mx-auto"
+      id="tech"
+    >
+      <motion.h2
+        variants={itemVariants}
+        className="text-xl uppercase tracking-[0.2em] text-neutral-700 dark:text-neutral-300 font-semibold mb-8"
+      >
+        Skills
+      </motion.h2>
 
-            <h2 className='pl-5 py-1.5 font-semibold text-xl border-b border-t border-zinc-300 dark:border-zinc-800'>
-                Skills
-            </h2>
+      <div className="flex flex-wrap justify-center gap-3">
+        {technologies.map(({ name, Icon, color }) => (
+          <motion.div
+            key={name}
+            variants={itemVariants}
+            whileHover={{ y: -3, scale: 1.02 }}
+            transition={{ type: "spring", stiffness: 400, damping: 25 }}
+            className="flex items-center gap-2 px-4 py-2 rounded-full border border-neutral-200 dark:border-neutral-800 bg-white/40 dark:bg-neutral-900/30 text-neutral-800 dark:text-neutral-200 shadow-sm hover:border-neutral-300 dark:hover:border-neutral-700 transition-colors cursor-default select-none"
+          >
+            <Icon className={`text-lg ${color}`} />
+            <span className="text-sm font-medium">{name}</span>
+          </motion.div>
+        ))}
+      </div>
+    </motion.section>
+  );
+};
 
-            <div className='px-5 my-3 flex flex-wrap gap-2'>
-
-                <Tech Icon={SiJavascript} name="JavaScript" color="dark:text-yellow-300" />
-                <Tech Icon={FaReact} name="React" color="dark:text-[#61DAFB]" />
-                <Tech Icon={SiTailwindcss} name="Tailwind CSS" color="dark:text-[#38B2AC]" />
-                <Tech Icon={FaNodeJs} name="NodeJS" color="dark:text-[#43853D]" />
-                <Tech Icon={FaHtml5} name="HTML" color="dark:text-[#E44D26]" />
-                <Tech Icon={FaCss3Alt} name="CSS" color="dark:text-[#2965f1]" />
-                <Tech Icon={FaGitAlt} name="Git" color="dark:text-[#F1502F]" />
-                <Tech Icon={FaGithub} name="GitHub" color="dark:text-[#000000] dark:text-[#ffffff]" />
-                <Tech Icon={FaJava} name="Java" color="dark:text-[#ED8B00]" />
-                <Tech Icon={TbBrandCpp} name="C/C++" color="dark:text-[#659AD2]"/>
-                <Tech Icon={TbBrandFramerMotion} name="Framer Motion" color="dark:text-[#0055FF]" />
-                <Tech Icon={FiFigma} name="Figma" color="dark:text-[#a259ff]" />
-            </div>
-
-        </section>
-    )
-}
-
-export default Stack
+export default Stack;
