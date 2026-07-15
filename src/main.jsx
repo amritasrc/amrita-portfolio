@@ -6,6 +6,9 @@ import './index.css'
 import { ThemeProvider } from "./context/ThemeContext.jsx"
 import ResumePage from './Comps/ResumePage.jsx';
 import NotFound from './Comps/NotFound.jsx';
+import Home from "./pages/Home.jsx";
+import ProjectsPage from './pages/ProjectsPage.jsx';
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,10 +16,11 @@ createRoot(document.getElementById('root')).render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="resume" element={<ResumePage />} />
-          <Route path="/*" element={<NotFound />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/resume" element={<ResumePage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>,
+      </BrowserRouter>
     </ThemeProvider>
-  </StrictMode>,
+  </StrictMode>
 )
