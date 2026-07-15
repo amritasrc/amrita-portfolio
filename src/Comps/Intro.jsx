@@ -49,7 +49,7 @@ const Intro = () => {
         transition={{ duration: 0.5, delay: 0.3 }}
         className="mt-6 max-w-xl text-zinc-600 dark:text-zinc-400 leading-relaxed"
       >
-        Building responsive web applications with React and modern JavaScript.
+        Turning coffee into clean code and interactive web apps. 
       </motion.p>
 
       {/* Location */}
