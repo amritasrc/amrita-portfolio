@@ -8,10 +8,11 @@ import Project from './Comps/Project'
 import Contact from './Comps/Contact'
 import GithubCalender from './Comps/GithubCalender'
 import { motion } from 'framer-motion'
+import Footer from './Comps/Footer';
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-neutral-50 dark:bg-black text-neutral-900 dark:text-neutral-50 transition-colors duration-300 selection:bg-neutral-200 dark:selection:bg-neutral-800">
+    <div className="min-h-screen bg-zinc-50 dark:bg-black text-zinc-900 dark:text-zinc-50 transition-colors duration-300 selection:bg-zinc-200 dark:selection:bg-zinc-800">
 
       <main className="max-w-2xl mx-auto px-6 flex flex-col">
         {/* nav */}
@@ -24,6 +25,7 @@ const App = () => {
         <GithubCalender />
         <Project />
         <Contact />
+        <Footer/>
       </main>
     </div>
   )

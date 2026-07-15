@@ -9,7 +9,7 @@ const projects = [
     githubLink: "https://github.com/amritasrc/Rhythmify",
     link: "https://rhythmify-jade.vercel.app/",
     projectDescrip:
-      "A modern music player built with React, TypeScript, Tailwind CSS, and the YouTube Data API. Search songs, play music instantly, control playback with keyboard shortcuts, and enjoy a clean Spotify-inspired experience.",
+      "A modern music player built with React, JavaScript, Tailwind CSS, and the YouTube Data API. Search songs, play music instantly, control playback with keyboard shortcuts, and enjoy a clean Spotify-inspired experience.",
     technologies: [
       "React",
       "JavaScript",
