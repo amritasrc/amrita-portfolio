@@ -1,17 +1,33 @@
-import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { FaArrowTrendUp } from "react-icons/fa6";
-import { IoIosClose } from "react-icons/io";
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ExternalLink, X } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
-const ProjectCard = ({imageSrc, projectName, link, projectDescrip, githubLink}) => {
+const cardVariants = {
+    hidden: { opacity: 0, y: 12 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.5,
+            ease: "easeOut",
+        },
+    },
+};
 
+const ProjectCard = ({
+    imageSrc,
+    projectName,
+    projectDescrip,
+    technologies = [],
+    githubLink,
+    link,
+}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
         const handleKeyDown = (e) => {
-            if (e.key === "Escape") {
-                setIsOpen(false);
-            }
+            if (e.key === "Escape") setIsOpen(false);
         };
 
         if (isOpen) {
@@ -27,104 +43,114 @@ const ProjectCard = ({imageSrc, projectName, link, projectDescrip, githubLink}) 
 
     return (
         <>
-            <motion.div
-                whileHover={{ scale: 1.04 }}
-                whileTap={{ scale: 0.95 }}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+            <motion.article
+                variants={cardVariants}
+                whileHover={{ y: -4 }}
                 transition={{
-                    opacity: { duration: 0.5 },
-                    y: { duration: 0.5 },
+                    type: "spring",
+                    stiffness: 350,
+                    damping: 25,
                 }}
-                className="bg-white dark:bg-[#12100e] border border-zinc-300 dark:border-zinc-800 rounded-2xl overflow-hidden"
+                className="group overflow-hidden rounded-2xl border border-zinc-200/50 dark:border-zinc-800/80 bg-white/40 dark:bg-zinc-900/30 backdrop-blur-sm shadow-sm hover:border-zinc-300 dark:hover:border-zinc-700/60 transition-colors duration-300"
             >
-                {/* Image Header */}
+                {/* Image */}
                 <div
-                    className="h-48 w-full overflow-hidden cursor-zoom-in"
                     onClick={() => setIsOpen(true)}
+                    className="cursor-zoom-in overflow-hidden"
                 >
                     <img
                         src={imageSrc}
                         alt={projectName}
-                        className="h-full w-full object-cover"
+                        className="h-40 w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                 </div>
 
                 {/* Content */}
-                <div className="p-4">
-                    <h3 className="flex justify-between items-center font-semibold">
+                <div className="flex h-full flex-col p-5">
+                    {/* Header */}
+                    <div className="flex items-start justify-between gap-3">
+                        <h3 className="text-base font-semibold tracking-tight text-zinc-900 dark:text-white">
+                            {projectName}
+                        </h3>
+                    </div>
+
+                    {/* Description */}
+                    <p className="mt-3 text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">
+                        {projectDescrip}
+                    </p>
+
+                    {/* Tech Stack */}
+                    {technologies.length > 0 && (
+                        <div className="mt-4 flex flex-wrap gap-1.5">
+                            {technologies.map((tech) => (
+                                <span
+                                    key={tech}
+                                    className="rounded-md border border-zinc-200/40 dark:border-zinc-800/60 bg-zinc-50/50 dark:bg-zinc-900/40 px-2 py-1 text-[11px] text-zinc-500 dark:text-zinc-400"
+                                >
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
+                    )}
+
+                    {/* Footer */}
+                    <div className="mt-5 flex items-center gap-4">
                         <a
                             href={githubLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hover:underline"
+                            className="flex items-center gap-1.5 text-xs text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors"
                         >
-                            {projectName}
+                            <FaGithub size={14} />
+                            Code
                         </a>
 
-                        <a
-                            href={link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="px-4 py-1 text-xs bg-zinc-200 dark:bg-[#1f1b17] hover:bg-zinc-300 dark:hover:bg-zinc-800 rounded-2xl transition-colors duration-200 flex items-center gap-1"
-                        >
-                            Live
-                            <FaArrowTrendUp className="text-green-500 text-lg" />
-                        </a>
-                    </h3>
-
-                    <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 leading-relaxed">
-                        {projectDescrip}
-                    </p>
+                        {link && (
+                            <a
+                                href={link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-1.5 text-xs text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors"
+                            >
+                                <ExternalLink size={14} />
+                                Demo
+                            </a>
+                        )}
+                    </div>
                 </div>
-            </motion.div>
+            </motion.article>
 
+            {/* Image Modal */}
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
                         onClick={() => setIsOpen(false)}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        transition={{ duration: 0.2 }}
+                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-5"
                     >
                         <motion.img
                             src={imageSrc}
                             alt={projectName}
                             onClick={(e) => e.stopPropagation()}
-                            className="max-h-[90vh] max-w-[90vw] rounded-xl shadow-2xl"
-                            initial={{
-                                opacity: 0,
-                                scale: 0.8,
-                                y: 20,
-                            }}
-                            animate={{
-                                opacity: 1,
-                                scale: 1,
-                                y: 0,
-                            }}
-                            exit={{
-                                opacity: 0,
-                                scale: 0.9,
-                            }}
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 0.95 }}
                             transition={{
                                 type: "spring",
                                 stiffness: 260,
                                 damping: 22,
                             }}
+                            className="max-h-[90vh] max-w-[90vw] rounded-2xl shadow-2xl"
                         />
 
                         <motion.button
                             onClick={() => setIsOpen(false)}
-                            className="absolute top-5 right-5 text-white text-4xl leading-none"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
                             whileTap={{ scale: 0.9 }}
+                            className="absolute right-6 top-6 text-white"
                         >
-                            <IoIosClose/>
+                            <X size={34} />
                         </motion.button>
                     </motion.div>
                 )}
@@ -133,4 +159,4 @@ const ProjectCard = ({imageSrc, projectName, link, projectDescrip, githubLink}) 
     );
 };
 
-export default ProjectCard;
+export default ProjectCard
