@@ -123,7 +123,7 @@ const Intro = () => {
         </a>
 
         <a
-          href="mailto:amrita.sen.dev@gmail.com"
+          href="mailto:dev.amritasrc@gmail.com"
           className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 hover:opacity-90 transition shadow-sm"
         >
           <Mail size={16} />
