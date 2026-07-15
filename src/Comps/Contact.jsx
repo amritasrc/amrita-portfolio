@@ -25,7 +25,7 @@ const socialLinks = [
     {
         icon: BsInstagram,
         href: "https://instagram.com/_amritaa.13",
-        label: "Email",
+        label: "Instagram",
     },
     {
         icon: BiLogoGmail,
@@ -41,7 +41,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="py-20 text-center max-w-2xl mx-auto flex flex-col items-center justify-center border-t border-zinc-200/40 dark:border-zinc-800/50"
+            className="py-20 text-center max-w-2xl mx-auto flex flex-col items-center justify-center border-t border-zinc-300 dark:border-zinc-700"
             id="contact"
         >
             <h2 className="text-xl uppercase tracking-[0.2em] text-zinc-700 dark:text-zinc-300 font-semibold mb-6">
