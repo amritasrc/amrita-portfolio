@@ -19,17 +19,18 @@ const projects = [
     ],
   },
   {
-    projectName: "Expense Tracker",
-    imageSrc: "/expense-tracker.png",
-    githubLink: "https://github.com/amritasrc/Expense-Tracker",
-    link: "https://expense-tracker-orcin-tau-32.vercel.app/",
+    projectName: "GitProfile",
+    imageSrc: "/gitprofile.png",
+    githubLink: "https://github.com/amritasrc/GitProfile",
+    link: "https://git-profile-seven.vercel.app/",
     projectDescrip:
-      "Track daily expenses with categorized transactions, real-time calculations, and a clean, user-friendly interface.",
+      "GitProfile is a simple React-based web app that lets you search and view GitHub user profiles in real time using the GitHub API. It displays key profile details like avatar, bio, repositories, followers, following, location, company, and social links.",
     technologies: [
       "React",
       "JavaScript",
       "Tailwind CSS",
-      "Local Storage",
+      "Axios",
+      "GitHub REST API",
     ],
   },
   {
