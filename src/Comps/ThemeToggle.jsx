@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
-import { WiDaySunny } from "react-icons/wi";
-import { IoMoon } from "react-icons/io5";
+import {Sun, Moon} from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion';
 
 const ThemeToggle = () => {
@@ -22,7 +21,7 @@ const ThemeToggle = () => {
                     transition={{ duration: 0.5, ease: 'easeInOut' }}
                     className="text-neutral-700 dark:text-neutral-300 flex items-center justify-center"
                 >
-                    {theme === 'light' ? <IoMoon size={20} /> : <WiDaySunny size={22} />}
+                    {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
                 </motion.div>
             </AnimatePresence>
         </button>
