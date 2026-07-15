@@ -6,7 +6,7 @@ import { BsTwitterX } from "react-icons/bs";
 
 const Intro = () => {
   return (
-    <section className="flex flex-col items-center text-center py-10 md:py-28">
+    <section className="flex flex-col items-center text-center py-10 md:py-16">
       {/* Profile Image */}
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
