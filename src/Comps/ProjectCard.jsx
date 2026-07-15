@@ -51,7 +51,7 @@ const ProjectCard = ({
                     stiffness: 350,
                     damping: 25,
                 }}
-                className="group overflow-hidden rounded-2xl border border-zinc-200/50 dark:border-zinc-800/80 bg-white/40 dark:bg-zinc-900/30 backdrop-blur-sm shadow-sm hover:border-zinc-300 dark:hover:border-zinc-700/60 transition-colors duration-300"
+                className="group overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 backdrop-blur-sm shadow-sm hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors duration-300"
             >
                 {/* Image */}
                 <div

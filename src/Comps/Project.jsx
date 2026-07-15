@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
+import Nav from "./Nav";
 
 const projects = [
   {
@@ -46,12 +47,12 @@ const projects = [
     ],
   },
   {
-    projectName: "AniVerse",
-    imageSrc: "/aniverse.png",
-    githubLink: "https://github.com/amritasrc/AniVerse",
-    link: "https://ani-verse-lake.vercel.app/",
+    projectName: "LaundryPro",
+    imageSrc: "/laundry.png",
+    githubLink: "https://github.com/amritasrc/LaundryPro-Website",
+    link: "https://laundry-pro-website.vercel.app/",
     projectDescrip:
-      "Discover anime through a modern interface with search, ratings, genres, and detailed information powered by an anime API.",
+      "A clean and responsive landing page for a laundry service, built using HTML, CSS, and JavaScript. Features EmailJS integration to send booking requests directly from the website without requiring a backend.",
     technologies: ["HTML", "CSS", "JAVASCRIPT"],
   },
   {
@@ -67,32 +68,35 @@ const projects = [
 ];
 
 const Project = () => {
-  return (
-    <motion.section
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      className="py-16"
-      id="projects"
-    >
-      {/* Heading */}
-      <div className="max-w-2xl mx-auto px-6">
-        <h2 className="text-xl uppercase tracking-[0.2em] text-neutral-700 dark:text-neutral-300 font-semibold text-center mb-10">
-          Projects
-        </h2>
-      </div>
 
-      {/* Project Grid */}
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-        {projects.map((project) => (
-          <ProjectCard
-            key={project.projectName}
-            {...project}
-          />
-        ))}
-      </div>
-    </motion.section>
+  return (
+    <div>
+      <motion.section
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="py-16"
+        id="projects"
+      >
+        {/* Heading */}
+        <div className="max-w-2xl mx-auto px-6">
+          <h2 className="text-xl uppercase tracking-[0.2em] text-zinc-700 dark:text-zinc-300 font-semibold text-center mb-10">
+            Projects
+          </h2>
+        </div>
+
+        {/* Project Grid */}
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+          {projects.map((project) => (
+            <ProjectCard
+              key={project.projectName}
+              {...project}
+            />
+          ))}
+        </div>
+      </motion.section>
+    </div>
   );
 };
 
