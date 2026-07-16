@@ -48,7 +48,7 @@ const Contact = () => {
                 Get in touch
             </h2>
 
-            <p className="text-lg md:text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight max-w-md mb-8">
+            <p className="text-lg md:text-2xl text-zinc-600 dark:text-zinc-400 tracking-tight max-w-md mb-8">
                 Interested in working together? Let's build something great.
             </p>
 
