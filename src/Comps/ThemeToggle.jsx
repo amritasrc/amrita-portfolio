@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
-import {Sun, Moon} from 'lucide-react'
+import { Sun, Moon } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion';
 
 const ThemeToggle = () => {
@@ -8,7 +8,14 @@ const ThemeToggle = () => {
 
     return (
         <button
-            onClick={toggleTheme}
+            onClick={(e) => {
+                const rect = e.currentTarget.getBoundingClientRect();
+
+                toggleTheme(
+                    rect.left + rect.width / 2,
+                    rect.top + rect.height / 2
+                );
+            }}
             className="p-2 rounded-full border border-neutral-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-md hover:bg-neutral-100 dark:hover:bg-neutral-800/60 transition-colors cursor-pointer relative overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-500"
             aria-label="Toggle dark mode"
         >
