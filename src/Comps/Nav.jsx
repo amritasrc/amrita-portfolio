@@ -10,7 +10,7 @@ const Nav = () => {
       initial={{ opacity: 0, y: -15 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="sticky top-4 z-50 mx-auto flex w-fit items-center gap-3 rounded-full border border-zinc-200/60 dark:border-zinc-800/70 bg-white/60 dark:bg-zinc-900/60 backdrop-blur-lg shadow-lg shadow-zinc-200/20 dark:shadow-black/20 px-3 py-2"
+      className="sticky top-4 z-50 mx-auto flex w-fit items-center gap-3 rounded-full border border-zinc-200/60 dark:border-zinc-800/70 bg-white/60 dark:bg-zinc-900/60 backdrop-blur-sm shadow-lg shadow-zinc-200/20 dark:shadow-black/20 px-3 py-2"
     >
       <Link to="/">
         <img
