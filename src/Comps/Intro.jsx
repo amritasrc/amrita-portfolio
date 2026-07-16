@@ -16,7 +16,7 @@ const Intro = () => {
       >
 
         <img
-          src="/profile.jpg"
+          src="/profile.jpeg"
           alt="Amrita"
           className="w-24 h-24 md:w-28 md:h-28 rounded-full border border-zinc-200 dark:border-zinc-800 object-cover shadow-sm group-hover:scale-[1.03] transition duration-300"
         />

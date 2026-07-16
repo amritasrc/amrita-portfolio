@@ -14,7 +14,7 @@ const Nav = () => {
     >
       <Link to="/">
         <img
-          src="/profile.jpg"
+          src="/profile.jpeg"
           alt="Amrita"
           className="h-9 w-9 rounded-full object-cover border border-zinc-200 dark:border-zinc-700 hover:scale-105 transition-transform"
         />
