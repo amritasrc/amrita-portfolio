@@ -5,6 +5,15 @@ import Nav from "./Nav";
 
 const projects = [
   {
+    projectName: "CopyIt",
+    imageSrc: "/copyIt.png",
+    githubLink: "https://github.com/amritasrc/copyIt",
+    link: "https://copy-it-gold.vercel.app/",
+    projectDescrip:
+      "A full-stack code snippet vault built with React, Tailwind CSS, Supabase, and Monaco Editor for creating, organizing, searching, editing, and managing reusable code snippets.",
+    technologies: ["React", "Tailwind CSS", "Supabase", "Monaco Editor", "React Router"]
+  },
+  {
     projectName: "Rhythmify",
     imageSrc: "/rhythmify.png",
     githubLink: "https://github.com/amritasrc/Rhythmify",
@@ -54,7 +63,7 @@ const projects = [
     link: "https://laundry-pro-website.vercel.app/",
     projectDescrip:
       "A clean and responsive landing page for a laundry service, built using HTML, CSS, and JavaScript. Features EmailJS integration to send booking requests directly from the website without requiring a backend.",
-    technologies: ["HTML", "CSS", "JAVASCRIPT"],
+    technologies: ["HTML", "CSS", "JAVASCRIPT", "EmailJS"],
   },
   {
     projectName: "Gradient Generator",
