@@ -6,25 +6,39 @@ import Nav from "./Nav";
 const projects = [
   {
     projectName: "CopyIt",
-    imageSrc: "/copyIt.png",
+    imageSrc: "/copyit.png",
     githubLink: "https://github.com/amritasrc/copyIt",
     link: "https://copy-it-gold.vercel.app/",
     projectDescrip:
-      "A full-stack code snippet vault built with React, Tailwind CSS, Supabase, and Monaco Editor for creating, organizing, searching, editing, and managing reusable code snippets.",
-    technologies: ["React", "Tailwind CSS", "Supabase", "Monaco Editor", "React Router"]
+      "A full-stack code snippet management platform built with React, Tailwind CSS, Node.js, Express, and MongoDB. Create, organize, search, edit, delete, and share reusable code snippets with secure JWT authentication and a dynamic dashboard.",
+
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "React Router",
+    ],
   },
   {
-    projectName: "Rhythmify",
-    imageSrc: "/rhythmify.png",
-    githubLink: "https://github.com/amritasrc/Rhythmify",
-    link: "https://rhythmify-jade.vercel.app/",
+    projectName: "URL Shortener",
+    imageSrc: "/shortener.png",
+    githubLink: "https://github.com/amritasrc/url-shortener",
     projectDescrip:
-      "A modern music player built with React, JavaScript, Tailwind CSS, and the YouTube Data API. Search songs, play music instantly, control playback with keyboard shortcuts, and enjoy a clean Spotify-inspired experience.",
+      "A full-stack URL shortener that lets users create short, shareable links and track their visit history. Built with React and Node.js, with a REST API, MongoDB storage, and a clean, responsive interface.",
+
     technologies: [
       "React",
       "JavaScript",
       "Tailwind CSS",
-      "YouTube API",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "REST API",
     ],
   },
   {
