@@ -6,7 +6,7 @@ import Nav from "./Nav";
 const projects = [
   {
     projectName: "CopyIt",
-    imageSrc: "/copyit.png",
+    imageSrc: "/copyIt.png",
     githubLink: "https://github.com/amritasrc/copyIt",
     link: "https://copy-it-iota.vercel.app/",
     projectDescrip:
