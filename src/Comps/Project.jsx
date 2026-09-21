@@ -8,7 +8,7 @@ const projects = [
     projectName: "CopyIt",
     imageSrc: "/copyit.png",
     githubLink: "https://github.com/amritasrc/copyIt",
-    link: "https://copy-it-gold.vercel.app/",
+    link: "https://copy-it-iota.vercel.app/",
     projectDescrip:
       "A full-stack code snippet management platform built with React, Tailwind CSS, Node.js, Express, and MongoDB. Create, organize, search, edit, delete, and share reusable code snippets with secure JWT authentication and a dynamic dashboard.",
 
