@@ -15,6 +15,7 @@ import {
   SiAxios,
   SiJsonwebtokens,
   SiVercel,
+  SiRender,
   SiPython,
 } from "react-icons/si";
 
@@ -69,6 +70,7 @@ const technologies = [
 
   // Deployment
   { name: "Vercel", Icon: SiVercel, color:"text-zinc-50" },
+  { name: "Render", Icon: SiRender, color:"text-zinc-50" },
 
   // Programming
   { name: "Java", Icon: FaJava, color: "text-orange-500" },
